@@ -1,4 +1,4 @@
-import 'package:drawer_routing/routes.dart';
+import 'package:drawer_routing/drawer_class.dart';
 import 'package:flutter/material.dart';
 
 class HomeDrawer extends StatefulWidget {
@@ -9,95 +9,40 @@ class HomeDrawer extends StatefulWidget {
 }
 
 class _HomeDrawerState extends State<HomeDrawer> {
+  // List with 50 Contacts:
+  final List<String> items =
+      List<String>.generate(50, (index) => "Contact ${index + 1}");
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Drawer Routing'),
+        title: const Text('Drawer Routing'),
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            UserAccountsDrawerHeader(
-              accountName: Text('Huzaifa Khan'),
-              accountEmail: Text('hk7928042@gmail.com'),
-              currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage('assets/dp.jpg'),
-              ),
-              otherAccountsPictures: [
-                CircleAvatar(
-                  child: ClipOval(
-                    child: CircleAvatar(
-                      backgroundImage:
-
-                          // In the IOS 1st image will be shown otherwise 2nd image will be shown:
-                          Theme.of(context).platform == TargetPlatform.iOS
-                              ? AssetImage('assets/dp.jpg') // 1st Image
-                              : AssetImage('assets/dp.jpg'), // 2nd Image
-                    ),
-                  ),
-                )
-              ],
-            ),
-            ListTile(
-              title: Text('Home'),
-              subtitle: Text('Buy Products'),
-              leading: Icon(Icons.home),
-              trailing: Icon(Icons.arrow_upward),
-              onTap: () {
-                // Close the drawer and then move to page01
-                Navigator.of(context).pop();
-
-                Navigator.of(context).pushNamed(page01Route);
-              },
-            ),
-            ListTile(
-              title: Text('Home'),
-              subtitle: Text('Buy Products'),
-              leading: Icon(Icons.home),
-              trailing: Icon(Icons.arrow_upward),
-              onTap: () {
-                // Close the drawer and then move to page01
-                Navigator.of(context).pop();
-
-                Navigator.of(context).pushNamed(page01Route);
-              },
-            ),
-            ListTile(
-              title: Text('Home'),
-              subtitle: Text('Buy Products'),
-              leading: Icon(Icons.home),
-              trailing: Icon(Icons.arrow_upward),
-              onTap: () {
-                // Close the drawer and then move to page01
-                Navigator.of(context).pop();
-
-                Navigator.of(context).pushNamed(page01Route);
-              },
-            ),
-            Divider(),
-            ListTile(
-              title: Text('Close'),
-              leading: Icon(Icons.close),
-              trailing: Icon(Icons.close),
-              onTap: () {
-                Navigator.of(context).pop();
-              },
-            ),
-            const Center(
-              child: Text(
-                'Powered by CapregSoft',
-                style: TextStyle(fontWeight: FontWeight.w200),
-              ),
-            )
-          ],
-        ),
-      ),
+      drawer: const MyDrawer(),
       body: Container(
-        child: const Center(
-          child: Text('Home Screen'),
-        ),
-      ),
+          child: ListView.builder(
+        itemCount: items.length,
+        itemBuilder: (context, index) {
+          return Dismissible(
+            key: Key(items[index]),
+            onDismissed: (direction) {
+              items.removeAt(index);
+              ScaffoldMessenger.of(context)
+                  .showSnackBar(SnackBar(content: Text('Item Deleted')));
+            },
+            background: Container(
+              color: Colors.red,
+            ),
+            child: ListTile(
+              title: Text('${items[index]}'),
+              subtitle: Text('Swipe to Delete'),
+              leading: Icon(Icons.production_quantity_limits),
+              trailing: Icon(Icons.delete),
+            ),
+          );
+        },
+      )),
     );
   }
 }
