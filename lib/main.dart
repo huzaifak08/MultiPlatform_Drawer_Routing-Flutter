@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
               ? Colors.blueAccent
               : null,
         ),
-        home: const HomeDrawer(),
+        home: const Page01(),
         routes: {
           page01Route: (context) => Page01(),
         });
