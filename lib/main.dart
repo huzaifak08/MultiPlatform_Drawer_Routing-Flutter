@@ -1,5 +1,6 @@
-import 'package:drawer_routing/home.dart';
-import 'package:drawer_routing/page1.dart';
+import 'package:drawer_routing/info_page.dart';
+import 'package:drawer_routing/home_page.dart';
+import 'package:drawer_routing/product_page.dart';
 import 'package:drawer_routing/routes.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -22,10 +23,11 @@ class MyApp extends StatelessWidget {
             ? Colors.blueAccent
             : null,
       ),
-      home: const Home(),
+      home: const Information(),
       routes: {
         homePageRoute: ((context) => Home()),
-        page01Route: (context) => Page01(),
+        productPageRoute: (context) => Page01(),
+        infoPageRoute: (context) => Information()
       },
     );
   }

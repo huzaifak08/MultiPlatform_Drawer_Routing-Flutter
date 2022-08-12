@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
             child: ListTile(
               title: Text('${items[index]}'),
               subtitle: Text('Swipe to Delete'),
-              leading: Icon(Icons.production_quantity_limits),
+              leading: CircleAvatar(child: Text('C')),
               trailing: Icon(Icons.delete),
             ),
           );
