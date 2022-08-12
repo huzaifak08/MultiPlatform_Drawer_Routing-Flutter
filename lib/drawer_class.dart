@@ -50,7 +50,17 @@ class MyDrawer extends StatelessWidget {
           ),
           ListTile(
             title: const Text('Home'),
-            subtitle: const Text('Buy Products'),
+            subtitle: const Text('It Contain all Contacts'),
+            leading: const Icon(Icons.home),
+            trailing: const Icon(Icons.arrow_upward),
+            onTap: () {
+              // Close the drawer and then move to page01
+              Navigator.of(context).pop();
+            },
+          ),
+          ListTile(
+            title: const Text('Products'),
+            subtitle: const Text('There are alot to see'),
             leading: const Icon(Icons.home),
             trailing: const Icon(Icons.arrow_upward),
             onTap: () {
@@ -69,19 +79,7 @@ class MyDrawer extends StatelessWidget {
               // Close the drawer and then move to page01
               Navigator.of(context).pop();
 
-              Navigator.of(context).pushNamed(page01Route);
-            },
-          ),
-          ListTile(
-            title: const Text('Home'),
-            subtitle: const Text('Buy Products'),
-            leading: const Icon(Icons.home),
-            trailing: const Icon(Icons.arrow_upward),
-            onTap: () {
-              // Close the drawer and then move to page01
-              Navigator.of(context).pop();
-
-              Navigator.of(context).pushNamed(page01Route);
+              // Navigator.of(context).pushNamed(page01Route);
             },
           ),
           const Divider(),

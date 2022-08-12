@@ -1,14 +1,14 @@
 import 'package:drawer_routing/drawer_class.dart';
 import 'package:flutter/material.dart';
 
-class HomeDrawer extends StatefulWidget {
-  const HomeDrawer({Key? key}) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
 
   @override
-  State<HomeDrawer> createState() => _HomeDrawerState();
+  State<Home> createState() => _HomeState();
 }
 
-class _HomeDrawerState extends State<HomeDrawer> {
+class _HomeState extends State<Home> {
   // List with 50 Contacts:
   final List<String> items =
       List<String>.generate(50, (index) => "Contact ${index + 1}");
