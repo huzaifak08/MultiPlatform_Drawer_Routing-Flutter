@@ -1,17 +1,19 @@
 import 'dart:async' show Future;
 import 'dart:convert';
 
+import 'package:drawer_routing/buy_product.dart';
+import 'package:drawer_routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class Page01 extends StatefulWidget {
-  const Page01({Key? key}) : super(key: key);
+class ProductPage extends StatefulWidget {
+  const ProductPage({Key? key}) : super(key: key);
 
   @override
-  State<Page01> createState() => _Page01State();
+  State<ProductPage> createState() => _ProductPageState();
 }
 
-class _Page01State extends State<Page01> {
+class _ProductPageState extends State<ProductPage> {
   final List<String> items =
       List<String>.generate(40, (index) => 'Item ${index + 1}');
 
@@ -35,12 +37,12 @@ class _Page01State extends State<Page01> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page 01'),
+        title: Text('Products'),
       ),
       body: Column(
         children: [
           Container(
-            height: 180,
+            height: 210,
             child: ListView.builder(
               itemCount: data.length,
               scrollDirection: Axis.horizontal,
@@ -49,6 +51,8 @@ class _Page01State extends State<Page01> {
                 var model = data[index]['model'];
                 var location = data[index]['location'];
                 var image = data[index]['image'];
+                var description = data[index]['description'];
+                var price = data[index]['price'];
                 return Card(
                   child: Column(
                     children: [
@@ -57,14 +61,30 @@ class _Page01State extends State<Page01> {
                         width: 150,
                         child: Image.network(image),
                       ),
-                      Expanded(
-                        child: Column(
-                          children: [
-                            Text(name),
-                            Text(model),
-                            Text(location),
-                          ],
-                        ),
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(name),
+                          Text(model),
+                          Text(location),
+                          // Divider(
+                          //   thickness: 10,
+                          //   color: Colors.black,
+                          // ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => BuyProduct(
+                                            image: image,
+                                            description: description,
+                                            price: price,
+                                          )));
+                            },
+                            child: Text('$price \$'),
+                          )
+                        ],
                       )
                     ],
                   ),
@@ -73,7 +93,7 @@ class _Page01State extends State<Page01> {
             ),
           ),
           Container(
-            height: 530,
+            height: 500,
             // color: Colors.red,
             // height: double.infinity,
             // width: 100,
@@ -85,6 +105,8 @@ class _Page01State extends State<Page01> {
                 var model = data[index]['model'];
                 var location = data[index]['location'];
                 var image = data[index]['image'];
+                var description = data[index]['description'];
+                var price = data[index]['price'];
                 return Container(
                   // color: Color.fromRGBO(255, 235, 59, 1),
                   height: 80,
@@ -96,7 +118,22 @@ class _Page01State extends State<Page01> {
                       ),
                       title: Text(name),
                       subtitle: Text(model),
-                      trailing: Text(location),
+                      // trailing: Text(location),
+                      trailing: Text(
+                        "${price} \$",
+                        style: TextStyle(
+                            color: Colors.red, fontWeight: FontWeight.bold),
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => BuyProduct(
+                                      image: image,
+                                      description: description,
+                                      price: price,
+                                    )));
+                      },
                     ),
                   ),
                 );

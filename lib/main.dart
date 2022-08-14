@@ -1,3 +1,4 @@
+import 'package:drawer_routing/buy_product.dart';
 import 'package:drawer_routing/info_page.dart';
 import 'package:drawer_routing/home_page.dart';
 import 'package:drawer_routing/product_page.dart';
@@ -23,11 +24,11 @@ class MyApp extends StatelessWidget {
             ? Colors.blueAccent
             : null,
       ),
-      home: const Information(),
+      home: Home(),
       routes: {
         homePageRoute: ((context) => Home()),
-        productPageRoute: (context) => Page01(),
-        infoPageRoute: (context) => Information()
+        productPageRoute: (context) => ProductPage(),
+        infoPageRoute: (context) => Information(),
       },
     );
   }

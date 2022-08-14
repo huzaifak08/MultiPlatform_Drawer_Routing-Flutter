@@ -3,72 +3,96 @@
         "name": "IPhone 13",
         "model": "2022",
         "location": "California",
-        "image": "https://cdn.homeshopping.pk/product_images/i/433/61IJBsHm97L._FM__00474.jpg"
+        "image": "https://cdn.homeshopping.pk/product_images/i/433/61IJBsHm97L._FM__00474.jpg",
+        "description": "The iPhone 13 Pro has a 6.06 inch (154 mm) (marketed as 6.1-inch (15 cm)) OLED display with a resolution of 2532 × 1170 pixels (2.9 megapixels) at 460 PPI, while the iPhone 13 Pro Max has a 6.68 inch (170 mm) (marketed as 6.7-inch (17 cm)) OLED display with a resolution of 2778 × 1284 pixels (3.5 megapixels) at 458 PPI.",
+        "price": "350,000"
     },
     {
         "name": "Samsung S21",
         "model": "2021",
         "location": "Korean",
-        "image": "https://images.samsung.com/uk/smartphones/galaxy-s21/buy/02_ImageCarousel/01_FamilyShot/S21_Family_KV_MO_img.jpg"
+        "image": "https://images.samsung.com/uk/smartphones/galaxy-s21/buy/02_ImageCarousel/01_FamilyShot/S21_Family_KV_MO_img.jpg",
+        "description": "The Samsung Galaxy S21 is a series of Android-based smartphones designed, developed, marketed, and manufactured by Samsung Electronics as part of its Galaxy S series. They collectively serve as the successor to the Samsung Galaxy S20 series.",
+        "price": "200,000"
     },
     {
         "name": "Blackberry",
         "model": "2010",
         "location": "USA",
-        "image": "https://propakistani.pk/price/wp-content/uploads/2017/03/9220-1-240x300.jpg"
+        "image": "https://propakistani.pk/price/wp-content/uploads/2017/03/9220-1-240x300.jpg",
+        "description": "BlackBerry is a former brand of smartphones, tablets, and services originally developed by the Canadian company BlackBerry Limited (formerly known as Research In Motion, or RIM) in January 1999",
+        "price": "18,000"
     },
     {
         "name": "IPhone 13",
         "model": "2022",
         "location": "California",
-        "image": "https://cdn.homeshopping.pk/product_images/i/433/61IJBsHm97L._FM__00474.jpg"
+        "image": "https://cdn.homeshopping.pk/product_images/i/433/61IJBsHm97L._FM__00474.jpg",
+        "description": "The iPhone 13 Pro has a 6.06 inch (154 mm) (marketed as 6.1-inch (15 cm)) OLED display with a resolution of 2532 × 1170 pixels (2.9 megapixels) at 460 PPI, while the iPhone 13 Pro Max has a 6.68 inch (170 mm) (marketed as 6.7-inch (17 cm)) OLED display with a resolution of 2778 × 1284 pixels (3.5 megapixels) at 458 PPI.",
+        "price": "350,000"
     },
     {
         "name": "Samsung S21",
         "model": "2021",
         "location": "Korean",
-        "image": "https://images.samsung.com/uk/smartphones/galaxy-s21/buy/02_ImageCarousel/01_FamilyShot/S21_Family_KV_MO_img.jpg"
+        "image": "https://images.samsung.com/uk/smartphones/galaxy-s21/buy/02_ImageCarousel/01_FamilyShot/S21_Family_KV_MO_img.jpg",
+        "description": "The Samsung Galaxy S21 is a series of Android-based smartphones designed, developed, marketed, and manufactured by Samsung Electronics as part of its Galaxy S series. They collectively serve as the successor to the Samsung Galaxy S20 series.",
+        "price": "200,000"
     },
     {
         "name": "Blackberry",
         "model": "2010",
         "location": "USA",
-        "image": "https://propakistani.pk/price/wp-content/uploads/2017/03/9220-1-240x300.jpg"
+        "image": "https://propakistani.pk/price/wp-content/uploads/2017/03/9220-1-240x300.jpg",
+        "description": "BlackBerry is a former brand of smartphones, tablets, and services originally developed by the Canadian company BlackBerry Limited (formerly known as Research In Motion, or RIM) in January 1999",
+        "price": "18,000"
     },
     {
         "name": "IPhone 13",
         "model": "2022",
         "location": "California",
-        "image": "https://cdn.homeshopping.pk/product_images/i/433/61IJBsHm97L._FM__00474.jpg"
+        "image": "https://cdn.homeshopping.pk/product_images/i/433/61IJBsHm97L._FM__00474.jpg",
+        "description": "The iPhone 13 Pro has a 6.06 inch (154 mm) (marketed as 6.1-inch (15 cm)) OLED display with a resolution of 2532 × 1170 pixels (2.9 megapixels) at 460 PPI, while the iPhone 13 Pro Max has a 6.68 inch (170 mm) (marketed as 6.7-inch (17 cm)) OLED display with a resolution of 2778 × 1284 pixels (3.5 megapixels) at 458 PPI.",
+        "price": "350,000"
     },
     {
         "name": "Samsung S21",
         "model": "2021",
         "location": "Korean",
-        "image": "https://images.samsung.com/uk/smartphones/galaxy-s21/buy/02_ImageCarousel/01_FamilyShot/S21_Family_KV_MO_img.jpg"
+        "image": "https://images.samsung.com/uk/smartphones/galaxy-s21/buy/02_ImageCarousel/01_FamilyShot/S21_Family_KV_MO_img.jpg",
+        "description": "The Samsung Galaxy S21 is a series of Android-based smartphones designed, developed, marketed, and manufactured by Samsung Electronics as part of its Galaxy S series. They collectively serve as the successor to the Samsung Galaxy S20 series.",
+        "price": "200,000"
     },
     {
         "name": "Blackberry",
         "model": "2010",
         "location": "USA",
-        "image": "https://propakistani.pk/price/wp-content/uploads/2017/03/9220-1-240x300.jpg"
+        "image": "https://propakistani.pk/price/wp-content/uploads/2017/03/9220-1-240x300.jpg",
+        "description": "BlackBerry is a former brand of smartphones, tablets, and services originally developed by the Canadian company BlackBerry Limited (formerly known as Research In Motion, or RIM) in January 1999",
+        "price": "18,000"
     },
     {
         "name": "IPhone 13",
         "model": "2022",
         "location": "California",
-        "image": "https://cdn.homeshopping.pk/product_images/i/433/61IJBsHm97L._FM__00474.jpg"
+        "image": "https://cdn.homeshopping.pk/product_images/i/433/61IJBsHm97L._FM__00474.jpg",
+        "description": "The iPhone 13 Pro has a 6.06 inch (154 mm) (marketed as 6.1-inch (15 cm)) OLED display with a resolution of 2532 × 1170 pixels (2.9 megapixels) at 460 PPI, while the iPhone 13 Pro Max has a 6.68 inch (170 mm) (marketed as 6.7-inch (17 cm)) OLED display with a resolution of 2778 × 1284 pixels (3.5 megapixels) at 458 PPI.",
+        "price": "350,000"
     },
     {
         "name": "Samsung S21",
         "model": "2021",
         "location": "Korean",
-        "image": "https://images.samsung.com/uk/smartphones/galaxy-s21/buy/02_ImageCarousel/01_FamilyShot/S21_Family_KV_MO_img.jpg"
+        "image": "https://images.samsung.com/uk/smartphones/galaxy-s21/buy/02_ImageCarousel/01_FamilyShot/S21_Family_KV_MO_img.jpg",
+        "description": "The Samsung Galaxy S21 is a series of Android-based smartphones designed, developed, marketed, and manufactured by Samsung Electronics as part of its Galaxy S series. They collectively serve as the successor to the Samsung Galaxy S20 series.",
+        "price": "200,000"
     },
     {
         "name": "Blackberry",
         "model": "2010",
         "location": "USA",
-        "image": "https://propakistani.pk/price/wp-content/uploads/2017/03/9220-1-240x300.jpg"
+        "image": "https://propakistani.pk/price/wp-content/uploads/2017/03/9220-1-240x300.jpg",
+        "description": "BlackBerry is a former brand of smartphones, tablets, and services originally developed by the Canadian company BlackBerry Limited (formerly known as Research In Motion, or RIM) in January 1999",
+        "price": "18,000"
     }
 ]
