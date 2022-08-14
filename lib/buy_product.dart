@@ -39,10 +39,10 @@ class BuyProduct extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                  content: Text('Transaction Successfull $price Paid')));
+                  content: Text('Transaction Successfull, $price \$ Paid')));
               Navigator.of(context).pop();
             },
-            child: Text('Buy $price'),
+            child: Text('Buy Product $price \$'),
           )
         ],
       ),
