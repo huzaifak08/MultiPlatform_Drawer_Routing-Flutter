@@ -1,5 +1,6 @@
 import 'dart:async' show Future;
 import 'dart:convert';
+import 'dart:core';
 
 import 'package:drawer_routing/buy_product.dart';
 import 'package:drawer_routing/routes.dart';
@@ -53,6 +54,19 @@ class _ProductPageState extends State<ProductPage> {
                 var image = data[index]['image'];
                 var description = data[index]['description'];
                 var price = data[index]['price'];
+                final image1 = data[index]['image1'];
+                final image2 = data[index]['image2'];
+                final image3 = data[index]['image3'];
+
+                final JImage = [image1, image2, image3];
+                // var JImage = List<dynamic>.from(Jimage);
+                // var fixedLengthList = List(3);
+                // fixedLengthList.length;
+
+                // List<String> JImage = [image1, image2, image3]..length = 500;
+
+                // List<String> growableList = List<String>.filled(500, image1, growable: true);
+
                 return Card(
                   child: Column(
                     children: [
@@ -77,9 +91,11 @@ class _ProductPageState extends State<ProductPage> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) => BuyProduct(
+                                            name: name,
                                             image: image,
                                             description: description,
                                             price: price,
+                                            JImage: JImage,
                                           )));
                             },
                             child: Text('$price \$'),
@@ -103,10 +119,16 @@ class _ProductPageState extends State<ProductPage> {
               itemBuilder: (context, index) {
                 var name = data[index]['name'];
                 var model = data[index]['model'];
-                var location = data[index]['location'];
+                // var location = data[index]['location'];
                 var image = data[index]['image'];
                 var description = data[index]['description'];
                 var price = data[index]['price'];
+                final image1 = data[index]['image1'];
+                final image2 = data[index]['image2'];
+                final image3 = data[index]['image3'];
+
+                final JImage = [image1, image2, image3];
+
                 return Container(
                   // color: Color.fromRGBO(255, 235, 59, 1),
                   height: 80,
@@ -129,9 +151,11 @@ class _ProductPageState extends State<ProductPage> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => BuyProduct(
+                                      name: name,
                                       image: image,
                                       description: description,
                                       price: price,
+                                      JImage: JImage,
                                     )));
                       },
                     ),

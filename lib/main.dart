@@ -1,6 +1,7 @@
 import 'package:drawer_routing/buy_product.dart';
 import 'package:drawer_routing/info_page.dart';
 import 'package:drawer_routing/home_page.dart';
+import 'package:drawer_routing/product_image_slider.dart';
 import 'package:drawer_routing/product_page.dart';
 import 'package:drawer_routing/routes.dart';
 import 'package:flutter/foundation.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         homePageRoute: ((context) => Home()),
         productPageRoute: (context) => ProductPage(),
         infoPageRoute: (context) => Information(),
+        // imageSliderRoute: (context) => ImageSlider()
       },
     );
   }
